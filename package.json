@@ -1,0 +1,34 @@
+{
+	"name": "@343dev/eslint-config",
+	"version": "1.0.0",
+	"description": "ESLint rules that follow my style guide",
+	"keywords": [
+		"eslint",
+		"eslintconfig"
+	],
+	"license": "MIT",
+	"author": "Andrey Warkentin (https://github.com/343dev)",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/343dev/eslint-config"
+	},
+	"files": [
+		".eslintrc.js",
+		"index.js"
+	],
+	"main": "index.js",
+	"engines": {
+		"node": ">=18.17"
+	},
+	"dependencies": {
+		"eslint-config-xo": "0.45.0",
+		"eslint-plugin-import": "2.29.1",
+		"eslint-plugin-unicorn": "53.0.0"
+	},
+	"devDependencies": {
+		"eslint": "^8.56.0"
+	},
+	"peerDependencies": {
+		"eslint": "^8.56.0"
+	}
+}
