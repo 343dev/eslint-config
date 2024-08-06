@@ -10,7 +10,7 @@
 	"author": "Andrey Warkentin (https://github.com/343dev)",
 	"repository": {
 		"type": "git",
-		"url": "https://github.com/343dev/eslint-config"
+		"url": "git+https://github.com/343dev/eslint-config.git"
 	},
 	"files": [
 		".eslintrc.js",
