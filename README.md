@@ -7,27 +7,33 @@ ESLint rules that follow my style guide.
 ## Installation
 
 ```bash
-npm install --save-dev @343dev/eslint-config
+npm install --save-dev eslint globals @343dev/eslint-config
 ```
 
 ## Usage
 
-Include into a project config using flag [--config](http://eslint.org/docs/user-guide/command-line-interface#-c---config),
+Include into a project config using flag [--config](https://eslint.org/docs/latest/use/command-line-interface#-c---config),
 and pass paths for files as arguments:
 
 ```sh
-eslint -c ./node_modules/@343dev/eslint-config/.eslintrc.js ./src
+eslint -c ./node_modules/@343dev/eslint-config/eslint.config.js ./src
 ```
 
-Also you can create your own `.eslintrc.js` and extend this config there:
+Also you can create your own `eslint.config.js` and extend this config there:
 
 ```js
-module.exports = {
-  extends: '@343dev',
-  env: {
-    jest: true
-  },
-}
+import config from '@343dev/eslint-config';
+import globals from 'globals';
+
+export default [
+	...config,
+
+	{
+		languageOptions: {
+			globals: globals.jest,
+		},
+	},
+];
 ```
 
-Read more about `.eslintrc.js` in [ESLint docs](https://eslint.org/docs/user-guide/configuring).
+Read more about `eslint.config.js` in [ESLint docs](https://eslint.org/docs/latest/use/configure/configuration-files).
