@@ -12,9 +12,6 @@ module.exports = {
 		'plugin:import/recommended',
 		'plugin:unicorn/recommended',
 	],
-	plugins: [
-		'import'
-	],
 	rules: {
 		'capitalized-comments': 'off',
 		'no-warning-comments': 'off',
@@ -23,5 +20,5 @@ module.exports = {
 			'always',
 		],
 		'unicorn/no-array-reduce': 'off',
-	}
-}
+	},
+};
