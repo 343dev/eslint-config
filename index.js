@@ -1,1 +1,1 @@
-module.exports = require('./.eslintrc'); // eslint-disable-line unicorn/prefer-module
+export { default } from './eslint.config.js';

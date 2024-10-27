@@ -1,6 +1,6 @@
 {
 	"name": "@343dev/eslint-config",
-	"version": "1.0.0",
+	"version": "2.0.0",
 	"description": "ESLint rules that follow my style guide",
 	"keywords": [
 		"eslint",
@@ -13,22 +13,26 @@
 		"url": "git+https://github.com/343dev/eslint-config.git"
 	},
 	"files": [
-		".eslintrc.js",
+		"eslint.config.js",
 		"index.js"
 	],
-	"main": "index.js",
+	"type": "module",
+	"exports": "./index.js",
 	"engines": {
-		"node": ">=18.17"
+		"node": ">=18.18"
 	},
 	"dependencies": {
-		"eslint-config-xo": "0.45.0",
-		"eslint-plugin-import": "2.29.1",
-		"eslint-plugin-unicorn": "53.0.0"
+		"@eslint/js": "9.13.0",
+		"eslint-config-xo": "0.46.0",
+		"eslint-plugin-import": "2.31.0",
+		"eslint-plugin-unicorn": "56.0.0",
+		"globals": "15.11.0"
 	},
 	"devDependencies": {
-		"eslint": "^8.56.0"
+		"eslint": "^9.13.0"
 	},
 	"peerDependencies": {
-		"eslint": "^8.56.0"
+		"eslint": "^9.13.0",
+		"globals": "^15.11.0"
 	}
 }
