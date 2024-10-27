@@ -9,6 +9,7 @@ module.exports = {
 	},
 	extends: [
 		'xo',
+		'eslint:recommended',
 		'plugin:import/recommended',
 		'plugin:unicorn/recommended',
 	],
