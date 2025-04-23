@@ -1,5 +1,6 @@
 import js from '@eslint/js';
 import xo from 'eslint-config-xo';
+import deMorgan from 'eslint-plugin-de-morgan'; // eslint-disable-line import/no-unresolved
 import pluginImport from 'eslint-plugin-import';
 import pluginUnicorn from 'eslint-plugin-unicorn';
 import globals from 'globals';
@@ -7,8 +8,9 @@ import globals from 'globals';
 export default [
 	...xo,
 	js.configs.recommended,
+	deMorgan.configs.recommended,
 	pluginImport.flatConfigs.recommended,
-	pluginUnicorn.configs['flat/recommended'],
+	pluginUnicorn.configs.recommended,
 
 	{
 		languageOptions: {
@@ -24,5 +26,5 @@ export default [
 			'no-warning-comments': 'off',
 			'unicorn/no-array-reduce': 'off',
 		},
-	}
+	},
 ];
