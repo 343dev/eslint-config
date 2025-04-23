@@ -8,7 +8,7 @@ export default [
 	...xo,
 	js.configs.recommended,
 	pluginImport.flatConfigs.recommended,
-	pluginUnicorn.configs['flat/recommended'],
+	pluginUnicorn.configs.recommended,
 
 	{
 		languageOptions: {
@@ -24,5 +24,5 @@ export default [
 			'no-warning-comments': 'off',
 			'unicorn/no-array-reduce': 'off',
 		},
-	}
+	},
 ];
