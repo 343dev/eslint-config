@@ -1,5 +1,11 @@
 # Migration
 
+## 4.0.0 → 5.0.0 (2026-06-26)
+
+- Use Node.js version >=22.
+- Install "eslint" version >=10.5.0.
+
+
 ## 3.0.0 → 4.0.0 (2026-01-01)
 
 - Use Node.js version >=20.10.
