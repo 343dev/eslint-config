@@ -33,6 +33,7 @@ const stylisticConfig = [
 		rules: {
 			'@stylistic/brace-style': ['error', '1tbs'],
 			'@stylistic/indent': ['error', 'tab'],
+			'@stylistic/indent-binary-ops': ['error', 'tab'],
 			'@stylistic/no-tabs': 'off',
 			'@stylistic/semi': ['error', 'always'],
 		},
