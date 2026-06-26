@@ -1,6 +1,6 @@
 {
 	"name": "@343dev/eslint-config",
-	"version": "4.0.0",
+	"version": "5.0.0",
 	"description": "ESLint rules that follow my style guide",
 	"keywords": [
 		"eslint",
